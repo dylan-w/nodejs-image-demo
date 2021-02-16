@@ -12,5 +12,5 @@ Docker run command:
 Replace \</host/sslKeyDirectory\> with host path to a folder containing ssl certs (privKey.pem and fullchain.pem)
 
 ```
-docker run --name nodejs-image-demo -d -v </host/sslKeyDirectory>:/ssl -p 8080:8080 -p 8443:8443 dylanwesenberg/nodejs-image-demo
+docker run --name nodejs-image-demo -d -p 8080:80 dylanwesenberg/nodejs-image-demo
 ```
